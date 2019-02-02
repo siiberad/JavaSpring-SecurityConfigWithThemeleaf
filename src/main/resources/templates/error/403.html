@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <div th:replace="fragments/header :: header-css"/>
+
+</head>
+<body>
+<section>
+    <div th:replace="fragments/header :: header-css"/>
+    <div class ="container">
+        <div class ="starter-tamplate">
+            <h1>
+                403 ACCESS DENIED !
+            </h1>
+            <div th:inline="text"> [[${#httpServletRequest.remoteUser}]]}', you need permission coy !</div>
+        </div>
+    </div>
+</section>
+
+<div th:replace="fragments/header :: header-css"/>
+
+</body>
+</html>
